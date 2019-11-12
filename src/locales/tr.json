@@ -1,0 +1,15 @@
+{
+  "login": {
+    "welcome": " Merhaba {{name}} !",
+    "login_button": "Giriş",
+    "signup_button": "Kayıt ol",
+    "skip": "Geç"
+  },
+  "user_profile": {
+    "title": "Profil"
+  },
+  "categories": {
+    "categories": "Kategoriler",
+    "categoryDefinition": "Kategori Tanımlama"
+  }
+}
