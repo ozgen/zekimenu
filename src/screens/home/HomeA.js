@@ -30,7 +30,6 @@ import ActionProductCardHorizontal from '../../components/cards/ActionProductCar
 import LinkButton from '../../components/buttons/LinkButton';
 import {Heading6} from '../../components/text/CustomText';
 import TouchableItem from '../../components/TouchableItem';
-import Draggable from 'react-native-draggable';
 
 // import colors
 import Colors from '../../theme/colors';
@@ -427,12 +426,19 @@ export default class HomeA extends Component {
                         />
                     </ScrollView>
                 </View>
-                <View style={{flex: 0.1, justifyContent: 'center', alignItems: 'center'}}>
+                <View style={{flex: 0.1,flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
 
+                    <Button
+                        title={'Orders'} color='green'
+                        onPress={this.navigateTo("WaitressOrders")}/>
                     <Button
                         title={'Call Waitress'} color='orange'
                         onPress={this.handleOnPress}/>
+                    <Button
+                        title={'Kitchen'} color='red'
+                        onPress={this.handleOnPress}/>
                 </View>
+
             </SafeAreaView>
         );
     }

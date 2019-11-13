@@ -64,6 +64,10 @@ import EditAddress from "../screens/address/EditAddressA";
 // import Orders screen
 import Orders from "../screens/orders/OrdersA";
 
+//import waitress orders screen
+import OrdersWithSituation from "../screens/orders/OrdersWithSituation";
+
+
 // import AboutUs screen
 import AboutUs from "../screens/about/AboutUsA";
 
@@ -280,6 +284,17 @@ const MainNavigatorA = createStackNavigator(
         }
       }
     },
+      // Waitress Orders screen
+      WaitressOrders: {
+          screen: OrdersWithSituation,
+          navigationOptions: {
+              title: "My Orders",
+              headerStyle: {
+                  elevation: 1,
+                  shadowOpacity: 0
+              }
+          }
+      },
 
     // AboutUs screen
     AboutUs: {
