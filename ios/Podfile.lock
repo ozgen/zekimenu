@@ -93,6 +93,8 @@ PODS:
     - React-Core (= 0.60.5)
   - React-RCTWebSocket (0.60.5):
     - React-Core (= 0.60.5)
+  - RNCPushNotificationIOS (1.0.3):
+    - React
   - RNGestureHandler (1.5.0):
     - React
   - RNI18n (2.0.15):
@@ -130,6 +132,7 @@ DEPENDENCIES:
   - React-RCTText (from `../node_modules/react-native/Libraries/Text`)
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
+  - "RNCPushNotificationIOS (from `../node_modules/@react-native-community/push-notification-ios`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNI18n (from `../node_modules/react-native-i18n`)
   - RNLocalize (from `../node_modules/react-native-localize`)
@@ -190,6 +193,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/Vibration"
   React-RCTWebSocket:
     :path: "../node_modules/react-native/Libraries/WebSocket"
+  RNCPushNotificationIOS:
+    :path: "../node_modules/@react-native-community/push-notification-ios"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
   RNI18n:
@@ -229,6 +234,7 @@ SPEC CHECKSUMS:
   React-RCTText: b074d89033583d4f2eb5faf7ea2db3a13c7553a2
   React-RCTVibration: 2105b2e0e2b66a6408fc69a46c8a7fb5b2fdade0
   React-RCTWebSocket: cd932a16b7214898b6b7f788c8bddb3637246ac4
+  RNCPushNotificationIOS: 5403d137a49c55f0dc2273be8473873e934359cd
   RNGestureHandler: a4ddde1ffc6e590c8127b8b7eabfdade45475c74
   RNI18n: e2f7e76389fcc6e84f2c8733ea89b92502351fd8
   RNLocalize: c117094a6c5a955c94e65520ad4c726e3a0f4ed6
@@ -236,6 +242,6 @@ SPEC CHECKSUMS:
   RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
   yoga: 312528f5bbbba37b4dcea5ef00e8b4033fdd9411
 
-PODFILE CHECKSUM: 1e7228c00a17c5fa9272b0b1acfcb27176f48dee
+PODFILE CHECKSUM: 3802f983f6cabcef4feaae6de4607dd3cc3ce86c
 
 COCOAPODS: 1.8.4

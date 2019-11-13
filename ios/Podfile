@@ -37,6 +37,8 @@ target 'FoodDelivery_Pro' do
 
   pod 'react-native-camera-kit', :path => '../node_modules/react-native-camera-kit'
 
+  pod 'RNCPushNotificationIOS', :path => '../node_modules/@react-native-community/push-notification-ios'
+
   target 'FoodDelivery_ProTests' do
     inherit! :search_paths
     # Pods for testing

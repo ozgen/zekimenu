@@ -130,6 +130,7 @@ android {
     defaultConfig {
         applicationId "com.fooddelivery_pro"
         minSdkVersion rootProject.ext.minSdkVersion
+        missingDimensionStrategy 'react-native-camera', 'mlkit'
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
@@ -188,6 +189,7 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-push-notification')
     implementation project(':react-native-camera-kit')
     implementation project(':react-native-camera')
     implementation project(':react-native-image-picker')
@@ -195,6 +197,8 @@ dependencies {
     implementation project(':react-native-vector-icons')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation "com.android.support:support-annotations:28.0.0"
+    annotationProcessor 'com.android.support:support-annotations:28.0.0'
 
     if (enableHermes) {
       def hermesPath = "../../node_modules/hermesvm/android/";
