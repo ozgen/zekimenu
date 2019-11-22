@@ -53,6 +53,8 @@ target 'FoodDelivery_Pro' do
 ]
   pod 'Firebase/Core'
 
+  pod 'RNGoogleSignin', :path => '../node_modules/@react-native-community/google-signin'
+
   target 'FoodDelivery_ProTests' do
     inherit! :search_paths
     # Pods for testing

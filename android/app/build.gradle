@@ -191,6 +191,7 @@ android {
 }
 
 dependencies {
+    implementation project(':@react-native-community_google-signin')
     implementation project(':react-native-camera')
     implementation project(':react-native-permissions')
     implementation project(':react-native-fbsdk')

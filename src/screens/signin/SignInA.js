@@ -20,6 +20,7 @@ import UnderlineTextInput from "../../components/textinputs/UnderlineTextInput";
 import Colors from "../../theme/colors";
 import Layout from "../../theme/layout";
 import {facebookService} from '../../services/FacebookService';
+import {googleService} from '../../services/GoogleService';
 
 // SignInA Config
 const PLACEHOLDER_TEXT_COLOR = "rgba(0, 0, 0, 0.4)";
@@ -285,7 +286,13 @@ export default class SignInA extends Component {
 
                 <View style={styles.vSpacer} />
                 <Button
-                  onPress={this.navigateTo("HomeNavigator")}
+                  onPress={()=>{
+                    googleService.signIn((userInfo)=>{
+                      console.log(userInfo);
+                      const { navigation } = this.props;
+                      navigation.navigate('HomeNavigator');
+                    })
+                  }}
                   activeOpacity={0.8}
                   height={BUTTON_HEIGHT}
                   borderRadius={BUTTON_BORDER_RADIUS}
