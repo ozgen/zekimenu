@@ -77,6 +77,9 @@ import QrCodeReader from '../screens/qrcodereader/QrCodeReader';
 // import colors
 import Colors from "../theme/colors";
 
+//import SlotMachine screen
+import SlotMachine from '../screens/slotmachine/SlotMachine';
+
 // create MainNavigator
 const MainNavigatorA = createStackNavigator(
   {
@@ -296,7 +299,19 @@ const MainNavigatorA = createStackNavigator(
           }
       },
 
-    // AboutUs screen
+      // SlotMachine screen
+      SlotMachine: {
+          screen: SlotMachine,
+          navigationOptions: {
+              title: "Game",
+              headerStyle: {
+                  elevation: 1,
+                  shadowOpacity: 0
+              }
+          }
+      },
+
+      // AboutUs screen
     AboutUs: {
       screen: AboutUs,
       navigationOptions: {

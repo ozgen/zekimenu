@@ -1,4 +1,4 @@
-package com.fooddelivery_pro;
+package com.burgerx;
 
 import com.facebook.react.ReactActivity;
 

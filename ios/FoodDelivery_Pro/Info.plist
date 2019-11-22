@@ -41,6 +41,8 @@
 	<string/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
+  <key>NSMicrophoneUsageDescription</key>
+     <string>${PRODUCT_NAME} Microphone Usage</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -53,13 +55,28 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-  
-  <key>NSCameraUsageDescription</key>
-  <string>${PRODUCT_NAME} Camera Usage</string>
- <!-- <key>NSLocationWhenInUseUsageDescription</key>
-  <string>${PRODUCT_NAME} WhenInUse Location</string>-->
-  <key>NSMicrophoneUsageDescription</key>
-  <string>${PRODUCT_NAME} Microphone Usage</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb484911182123104</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>484911182123104</string>
+	<key>FacebookDisplayName</key>
+	<string>burgerx</string>
+	<key>NSCameraUsageDescription</key>
+	<string>${PRODUCT_NAME} Camera Usage</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
 	<key>UIAppFonts</key>
 	<array>
 		<string>AntDesign.ttf</string>

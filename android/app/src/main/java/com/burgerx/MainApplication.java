@@ -1,4 +1,4 @@
-package com.fooddelivery_pro;
+package com.burgerx;
 
 import android.app.Application;
 import android.util.Log;
@@ -7,9 +7,10 @@ import com.facebook.react.PackageList;
 import com.facebook.hermes.reactexecutor.HermesExecutorFactory;
 import com.facebook.react.bridge.JavaScriptExecutorFactory;
 import com.facebook.react.ReactApplication;
-import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
-import com.wix.RNCameraKit.RNCameraKitPackage;
 import org.reactnative.camera.RNCameraPackage;
+import com.reactnativecommunity.rnpermissions.RNPermissionsPackage;
+import com.facebook.reactnative.androidsdk.FBSDKPackage;
+import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
 import com.imagepicker.ImagePickerPackage;
 import com.reactcommunity.rnlocalize.RNLocalizePackage;
 import com.oblador.vectoricons.VectorIconsPackage;
@@ -33,6 +34,7 @@ public class MainApplication extends Application implements ReactApplication {
       List<ReactPackage> packages = new PackageList(this).getPackages();
       // Packages that cannot be autolinked yet can be added manually here, for example:
       // packages.add(new MyReactNativePackage());
+      //packages.add(new RNCameraPackage());
       return packages;
     }
 

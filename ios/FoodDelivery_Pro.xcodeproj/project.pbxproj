@@ -32,6 +32,7 @@
 		B55C74F4FD074BE6B73AF084 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B468F2DC36345069A5377D5 /* AntDesign.ttf */; };
 		CD71EAFA9397AE3F8540D13A /* libPods-FoodDelivery_Pro-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8DF225F62B7410F90E402B /* libPods-FoodDelivery_Pro-tvOSTests.a */; };
 		CE3A7E1371BA4FE19B4831FA /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6488FA8353D3421EADCD9C05 /* MaterialIcons.ttf */; };
+		E7FDB1DE2387E20D0068539C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7FDB1DD2387E20C0068539C /* GoogleService-Info.plist */; };
 		F12C8620FF9B4CDBAFBF28F5 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC98EEC43046412CBF46A632 /* Entypo.ttf */; };
 		F15EE586D8887E0F88A31AA7 /* libPods-FoodDelivery_ProTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED9C24416F6A9427CA618860 /* libPods-FoodDelivery_ProTests.a */; };
 		F4D4495AD55941B095B3D8E8 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34A7727ED7C6447A94AB0FE7 /* SimpleLineIcons.ttf */; };
@@ -93,6 +94,7 @@
 		AD4D571ECC408BC439668127 /* Pods-FoodDelivery_Pro-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodDelivery_Pro-tvOS.release.xcconfig"; path = "Target Support Files/Pods-FoodDelivery_Pro-tvOS/Pods-FoodDelivery_Pro-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		D3F0A5D1B4212C731768647E /* Pods-FoodDelivery_Pro-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodDelivery_Pro-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-FoodDelivery_Pro-tvOSTests/Pods-FoodDelivery_Pro-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		DEF5A22CC2046C251063938B /* Pods-FoodDelivery_ProTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodDelivery_ProTests.release.xcconfig"; path = "Target Support Files/Pods-FoodDelivery_ProTests/Pods-FoodDelivery_ProTests.release.xcconfig"; sourceTree = "<group>"; };
+		E7FDB1DD2387E20C0068539C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EBFE2E9966FF4460896874A0 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -162,6 +164,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
+				E7FDB1DD2387E20C0068539C /* GoogleService-Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
@@ -407,6 +410,7 @@
 				4A478DE4EF3049B3A8231EBC /* FontAwesome5_Regular.ttf in Resources */,
 				78418BE0D6684A9093754385 /* FontAwesome5_Solid.ttf in Resources */,
 				2BCE86CFEE8A43F98E82CE2F /* Fontisto.ttf in Resources */,
+				E7FDB1DE2387E20D0068539C /* GoogleService-Info.plist in Resources */,
 				151BB7955C784B729BBF989E /* Foundation.ttf in Resources */,
 				0593EF79A7844BCDBDE90874 /* Ionicons.ttf in Resources */,
 				7242EB9DB9964C499A9E8524 /* MaterialCommunityIcons.ttf in Resources */,
@@ -536,6 +540,9 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FoodDelivery_Pro/Pods-FoodDelivery_Pro-resources.sh",
+				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMLVisionFaceModel/GoogleMVFaceDetectorResources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMLVisionTextModel/GoogleMVTextDetectorResources.bundle",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -555,6 +562,9 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVFaceDetectorResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVTextDetectorResources.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
@@ -711,6 +721,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FoodDelivery_ProTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -731,6 +742,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FoodDelivery_ProTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -754,6 +766,7 @@
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = X46L59XMHV;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FoodDelivery_Pro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -775,6 +788,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = X46L59XMHV;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FoodDelivery_Pro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -801,6 +815,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "FoodDelivery_Pro-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -829,6 +844,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "FoodDelivery_Pro-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -856,6 +872,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "FoodDelivery_Pro-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -883,6 +900,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "FoodDelivery_Pro-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (

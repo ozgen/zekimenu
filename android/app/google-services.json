@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "333669437075",
+    "firebase_url": "https://zekimenu.firebaseio.com",
+    "project_id": "zekimenu",
+    "storage_bucket": "zekimenu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333669437075:android:7eadd73885c016b52d4766",
+        "android_client_info": {
+          "package_name": "com.burgerx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333669437075-asv128buuhnmd1do5us5intf0i57lrq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaa3RrALeVjEHxgrX9vSKVJ5ItRtkdpEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333669437075-asv128buuhnmd1do5us5intf0i57lrq7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333669437075:android:5c6a87b5d5419f032d4766",
+        "android_client_info": {
+          "package_name": "com.fooddelivery_pro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333669437075-asv128buuhnmd1do5us5intf0i57lrq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaa3RrALeVjEHxgrX9vSKVJ5ItRtkdpEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333669437075-asv128buuhnmd1do5us5intf0i57lrq7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

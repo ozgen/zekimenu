@@ -8,13 +8,14 @@
 // import dependencies
 import React, { Component } from "react";
 import {
+  Button,
   Image,
   SafeAreaView,
   StatusBar,
   StyleSheet,
   Text,
-  View
-} from "react-native";
+  View,
+} from 'react-native';
 import Swiper from "react-native-swiper";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
@@ -186,6 +187,7 @@ export default class OnboardingA extends Component {
     const { activeIndex } = this.state;
     return (
       <SafeAreaView style={styles.screenContainer}>
+        <Button title="Slot Machine" onPress={this.navigateTo('SlotMachine')}/>
         <StatusBar
           backgroundColor={Colors.statusBarColor}
           barStyle="dark-content"

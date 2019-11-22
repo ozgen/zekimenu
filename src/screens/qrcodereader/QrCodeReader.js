@@ -18,94 +18,9 @@ import {Caption, Heading5, SmallText} from '../../components/text/CustomText';
 import Icon from '../../components/icon/Icon';
 import SizePicker from '../../components/pickers/SizePicker';
 import TouchableItem from '../../components/TouchableItem';
-import {CameraKitCameraScreen} from 'react-native-camera-kit';
+import {RNCamera} from 'react-native-camera';
 import Colors from '../../theme/colors';
 
-var width = Dimensions.get('window').width; //full width
-var height = Dimensions.get('window').height; //full height
-
-/*
-const styles = StyleSheet.create({
-    screenContainer: {
-        flex: 1,
-        backgroundColor: Colors.background,
-    },
-    qrContainer: {
-        marginTop: 200,
-        width: width,
-        alignSelf: 'stretch',
-        height: 328,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    productTitleContainer: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        paddingTop: 24,
-        paddingBottom: 10,
-    },
-    productTitle: {
-        fontWeight: '700',
-    },
-    pickerGroup: {
-        marginTop: 24,
-    },
-    pickerContainer: {
-        flexDirection: 'row',
-        justifyContent: 'flex-start',
-        alignItems: 'center',
-        paddingHorizontal: 16,
-    },
-    amountContainer: {
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: 16,
-    },
-    amountButtonsContainer: {
-        flexDirection: 'row',
-        justifyContent: 'flex-end',
-        alignItems: 'center',
-    },
-    quantity: {
-        top: -1,
-        paddingHorizontal: 20,
-        fontSize: 18,
-        color: Colors.black,
-        textAlign: 'center',
-    },
-    iconContainer: {
-        justifyContent: 'center',
-        alignItems: 'center',
-        margin: 8,
-        width: 32,
-        height: 32,
-        borderRadius: 16,
-        backgroundColor: Colors.secondaryColor,
-    },
-    bottomButtonContainer: {
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        alignItems: 'center',
-        width: '100%',
-        paddingBottom: 16,
-        paddingHorizontal: 16,
-    },
-    buttonPriceContainer: {
-        position: 'absolute',
-        top: 0,
-        left: 32,
-        height: 48,
-        justifyContent: 'center',
-    },
-    buttonPriceText: {
-        fontSize: 16,
-        lineHeight: 18,
-        color: Colors.onPrimaryColor,
-    },
-});
-*/
 
 export default class QrCodeReader extends Component {
 
@@ -164,6 +79,11 @@ export default class QrCodeReader extends Component {
         navigation.navigate(screen);
     };
 
+    barcodeRecognized = ({ barcodes }) => {
+        barcodes.forEach(barcode => console.warn(barcode.data));
+        //todo change state and add barcode here
+    };
+
     render() {
         if (!this.state.Start_Scanner) {
 
@@ -199,7 +119,7 @@ export default class QrCodeReader extends Component {
         return (
             <View style={{ flex: 1 }}>
 
-                <CameraKitCameraScreen
+               {/* <CameraKitCameraScreen
                     showFrame={true}
                     scanBarcode={true}
                     laserColor={'#FF3D00'}
@@ -208,7 +128,18 @@ export default class QrCodeReader extends Component {
                     onReadCode={event =>
                         this.onQR_Code_Scan_Done(event.nativeEvent.codeStringValue)
                     }
-                />
+                />*/}
+                <RNCamera
+                  ref={ref => {
+                      this.camera = ref;
+                  }}
+                  style={{
+                      flex: 1,
+                      width: '100%',
+                  }}
+                  onGoogleVisionBarcodesDetected={this.barcodeRecognized}
+                >
+                </RNCamera>
 
             </View>
         );

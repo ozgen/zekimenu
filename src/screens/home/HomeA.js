@@ -33,6 +33,7 @@ import TouchableItem from '../../components/TouchableItem';
 
 // import colors
 import Colors from '../../theme/colors';
+import SlotMachine from '../slotmachine/SlotMachine';
 
 const IOS = Platform.OS === 'ios';
 
